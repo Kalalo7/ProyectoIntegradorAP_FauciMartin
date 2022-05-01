@@ -26,10 +26,10 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
+            "styles": ["PI_Fauci/node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": ["PI_Fauci/node_modules/bootstrap/dist/js/bootstrap.js"]
           },
           "configurations": {
             "production": {
