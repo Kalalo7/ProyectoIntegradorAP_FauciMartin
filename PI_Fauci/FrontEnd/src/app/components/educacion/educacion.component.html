@@ -1,26 +1,12 @@
-<div class="row">
+<div class ="row">
     <h1>Estudios</h1>
+</div>
+<div class="row" *ngFor="let educacion of educaciones">
     <div class="col-lg-1"></div>
     <div class="col-lg-11">
         <ul>
-            <li><h1>Bachiller completo con orientación a las ciencias naturales   </h1> <h3> 12/2008 </h3></li>
-            <p> Titulo secundario completo. E.E.M Nº 11 Simón Bolívar, Sarandí, Avellaneda, Argentina
-                Promedio General 6,95 </p>
-        </ul>
-        <hr>
-        <ul>
-            <li><h1>Tecnicatura superior en higiene y seguridad en el trabajo </h1> <h3> 8/2016 - 8/2019 </h3></li>
-            <p> Título Universitario Completo,  Universidad Tecnológica Nacional 
-                Promedio 8,71 Verificación mediante https://registrograduados.siu.edu.ar/ 
-                
-            </p>
-        </ul>
-        <hr>
-        <ul>
-            <li><h1>Tecnicatura Superior en Programación </h1> - <h3> 04/2019</h3></li>
-            <p> En Curso, Instituto Teclab / Universidad Siglo XXI
-                78% de finales aprobados
-                </p>
+            <li><h2>{{educacion.descEdu}}</h2>-<h3>{{educacion.fechaEdu}}</h3></li>
+            <p>{{educacion.tituloEdu}}</p>
         </ul>
         <hr>
     </div>
