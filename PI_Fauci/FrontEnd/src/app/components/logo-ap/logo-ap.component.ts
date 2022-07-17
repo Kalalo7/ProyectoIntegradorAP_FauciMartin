@@ -1,4 +1,6 @@
+import { LEADING_TRIVIA_CHARS } from '@angular/compiler/src/render3/view/template';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-logo-ap',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogoAPComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
 
+  login(){
+    this.router.navigate(['/login'])
+  }
 }
